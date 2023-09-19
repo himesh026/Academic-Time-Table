@@ -73,7 +73,11 @@ html,body{
     /* height: 200vh; */
     height: 100vh;
     background-color: #f0f0f0;
+    /* display: none; */
 
+}
+.home{
+    display: none;
 }
 
 #home #nav{
@@ -85,6 +89,8 @@ html,body{
     height: 100px;
     top: 0%;
     background-color: rgb(233, 233, 233);
+
+
     /* z-index: 2; */
 
 }
@@ -154,7 +160,7 @@ html,body{
     
 }
 
-.row:nth-child(3){
+/* .row:nth-child(3){
     margin-top: 0 ;
 }
 
@@ -165,23 +171,23 @@ html,body{
 
 path, polyline{
     stroke: #14CF93;
-}
+} */
 
-.row h1,.row h5{
+/* .row h1,.row h5{
     animation-name: upward-animation;
     animation-duration:4s;
     animation-delay: 3.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
-}
-@keyframes upward-animation {
+} */
+/* @keyframes upward-animation {
     from{
         opacity: 0;
     }
     to{
         opacity: 1;
         }
-}
+} */
 /* loading-logo */
 .loader-logo {
     border: 8px solid #f3f3f3;
@@ -215,10 +221,135 @@ path, polyline{
     background-image: url(https://149695847.v2.pressablecdn.com/wp-content/uploads/2022/06/84008719_873346209788587_5273924281313525760_n.jpeg);
     height: 100vh;
     background-size: cover;
-    opacity: 0.75;
+    /* opacity: 0.75; */
     /* z-index: -112345; */
+    display: none;
 }
 
 .content{
     /* margin-top: 100px; */
 }
+
+.show{
+    display: block;
+}
+
+
+
+/* Apply a basic style to the timetable container */
+#timetable {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form and input elements */
+#timetable-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#rollNumber {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#daySelector {
+    width: 48%; /* Adjust the width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style the submit button */
+#submit-button {
+    width: 110%;
+    background-color: #007BFF;
+    color: #08db21;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit-button:hover {
+    background-color: #0056b3;
+    transform: perspective(1px) scale(1.02);
+    transition: transform 0.3s ease-in-out;
+    background-color: #ffdd00; /* Darker shade on hover */
+}
+
+/* Style the timetable table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Apply responsive styles */
+@media screen and (max-width: 600px) {
+    #timetable-form {
+        flex-direction: column;
+    }
+
+    #daySelector {
+        width: 100%;
+    }
+}
+
+/* Add a 3D hover effect to table rows */
+tr:hover {
+    transform: perspective(1px) translateZ(0.12px);
+    transition: transform 0.3s ease-in-out;
+    background-color: #70e159;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.content{
+    margin-right: 700px;
+    /* margin-top: 100px; */
+    padding-top: 100px;
+    padding-left: 50px;
+    text-decoration: #14CF93;
+    /* z-index: 112345; */
+}
+
+/* /////////////////////// */
+
+
+/* 
+h1 {
+    color: #fdaf01;
+} */
+
+
+
+
+
+
+
+
