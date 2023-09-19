@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="loader">
+            <div id="topheading">
+                <h5 class="reveal">Made by &hearts;</h5>
+                <h5 class="reveal">&copy;2023 </h5>
+            </div>
+            <h1 class="reveal"><span>TIME-TABLE</span> <span><span>OF</span></span> <span>IITJ</span></h1>
+            <div class="loader-container reveal">
+                <div class="loader-logo "></div>
+            </div>
+        </div>
+        <section>
+            <div id="home">
+                <section>
+                    <div id="nav">
+                        <img src="iitj_logo.svg.png" alt="IITJ-LOGO" class="iitj_logo">
+                        <div>
+                            <div>
+                                <div>
+                                    <h1>Time Table</h1>
+                                </div>
+                                <div>
+                                    <h1>Indian Institute of Technology Jodhpur</h1>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </section>
+                <section>
+
+                </section>
+
+
+            </div>
+
+        </section>
+
+    </div>
+    <div class="box">
+        <div class="content">
+            <h1>College Timetable</h1>
+            <form id="timetable-form">
+                <label for="rollNumber">Enter Roll Number:</label>
+                <input type="text" id="rollNumber" name="rollNumber" required>
+                <label for="daySelector">Select Day:</label>
+                <select id="daySelector" name="daySelector">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                </select>
+                <input type="submit" value="Get Timetable">
+            </form>
+            <div id="timetable"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js" async defer></script>
+</body>
+
+</html>
