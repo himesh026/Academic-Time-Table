@@ -17,6 +17,7 @@ function revealtospan() {
         });
 }
 
+  
 
 
 function loaderAnimation(){
@@ -42,13 +43,13 @@ tl
     ease:Expo.easeInOut
 
 })
-.to("#green",{
-    height:"100%",
-    // top:0,
-    duration:2,
-    delay:-2,
-    ease:Expo.easeInOut
-})
+// .to("#green",{
+//     height:"100%",
+//     // top:0,
+//     duration:2,
+//     delay:-2,
+//     ease:Expo.easeInOut
+// })
 .to("#home",{
     height:"100%",
     duration:2,
@@ -60,24 +61,34 @@ tl
 }
 
 
-function animateSvg(){
-    document.querySelectorAll("#Visual>g").forEach(function (e){
-        let character=e.childNodes[1].childNodes[1];
+// function animateSvg(){
+//     document.querySelectorAll("#Visual>g").forEach(function (e){
+//         let character=e.childNodes[1].childNodes[1];
 
-        character.style.strokeDasharray = character.getTotalLength() + 'px';
-        character.style.strokeDashoffset = character.getTotalLength() + 'px';
-    })
+//         character.style.strokeDasharray = character.getTotalLength() + 'px';
+//         character.style.strokeDashoffset = character.getTotalLength() + 'px';
+//     })
 
-    gsap.to("#Visual>g>g>path,#Visual>g>g>Polyline", {
-        strokeDashoffset: 0,
-        duration: 2,
-        ease: Expo.easeInOut,
-        delay: 2
-    });
-}
+//     gsap.to("#Visual>g>g>path,#Visual>g>g>Polyline", {
+//         strokeDashoffset: 0,
+//         duration: 2,
+//         ease: Expo.easeInOut,
+//         delay: 2
+//     });
+// }
 
 revealtospan();
 loaderAnimation();
+
+let box=document.querySelector(".box");
+
+let home=document.querySelector(".home");
+
+setTimeout(function(){
+    box.classList.add("show");
+    home.classList.add("show");
+
+},3300)
 // animateSvg();
 
 //loading-logo
@@ -169,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     
         // Start building the HTML table with borders, auto-sized columns, and centered content
-        let timetableHTML = '<table style="border-collapse: collapse; width: 50%;">';
+        let timetableHTML = '<table style="border-collapse: collapse; width: 100%;">';
         timetableHTML += '<tr style="border: 1px solid black;"><th style="border: 1px solid black; width: auto; text-align: center;">Day</th><th style="border: 1px solid black; width: auto; text-align: center;">Class</th><th style="border: 1px solid black; width: auto; text-align: center;">Room</th><th style="border: 1px solid black; width: auto; text-align: center;">Time</th></tr>';
     
         // Loop through the timetable data and add rows to the table with borders and centered content
@@ -191,4 +202,5 @@ document.addEventListener('DOMContentLoaded', function () {
         return timetableHTML;
     }
 });
+
 
