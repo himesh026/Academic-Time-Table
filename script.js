@@ -159,6 +159,39 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Add more classes for the ES009 roll number
             ],
+            'B21BB034' : [
+                'Monday    Humanities(K)           Room 101            8:00 AM - 8:50 AM',
+                'Monday    Human Machine           Room 101 BB Dept    9:00 AM - 9:50 AM',
+                'Monday    Biosensors              Room 105 LHB        10:00 AM - 10:50 AM',
+                'Monday    Computational System    Room 308 LHB        11:00 AM - 11:50 AM',
+                'Monday    Computational Lab       CC LAB              3:00 pM - 5.00 pM',
+                'Monday    Professional Ethics     Room 110 LHB        5:00 PM - 5:50 PM',
+                '',
+                'Tuesday   Humanities(N)         Varies                8:00 AM - 8:50 AM',
+                'Tuesday   Human Machine         Room 101 BB Dept.     9:00 AM - 9:50 AM',
+                'Tuesday   Genetics              Room 102 BB Dept.     10:00 AM - 10:50 AM',
+                'Tuesday   Anti Cancer           Room 102 BB Dept.     12:00 AM - 12:50 PM',
+                '',
+                'Wednesday  Genetics                Room 102 BB Dept.  10:00 AM - 10:50 AM',
+                'Wednesday  Biosensors              Room 105 LHB       10:00 AM - 10:50 AM',
+                'Wednesday  Computational System    Room 102 BB Dept.  11:00 AM - 11:50 AM',
+                'Wednesday  Genetics LAB            BASIC LAB,         1:00 PM - 3:00 PM',
+                'Wednesday  BIOSENSORS LAB          BASIC LAB,         3:00 PM - 5:00 PM',
+                '',
+                'Thursday  Humanities(N)         Varies                8:00 AM - 8:50 AM',
+                'Thursday  Human Machine         Room 101 BB Dept      9:00 AM - 9:50 AM',,
+                'Thursday  Biosensors            Room 105 LHB          10:00 AM - 10:50 AM',
+                'Thursday  Anti Cancer           Room 102 BB Dept.     12:00 AM - 12:50 PM',
+                '',
+                'Friday    Humanities(K)          Room 101           8:00 AM - 8:50 AM',
+                'Friday    Genetics               Room 102 BB Dept.  10:00 AM - 10:50 AM',
+                'Friday    Computational System   Room 308 LHB       10:00 AM - 10:50 AM',
+                'Friday    Anti Cancer            Room 102 BB Dept.  12:00 AM - 12:50 PM',
+                'Friday    Humanities(N)          Varies             5:00 PM - 5:50 PM',,
+                '',
+                '',
+
+            ]
             // Add data for other roll numbers as needed
         };
 
@@ -166,6 +199,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (rollNumber >= 'B21ES001' && rollNumber <= 'B21ES021') {
             // Filter the timetable data based on the selected day
             return timetableData['B21ES009'].filter(entry => entry.startsWith(selectedDay)) || [];
+        }
+        if (rollNumber >= 'B21BB001' && rollNumber <= 'B21BB040') {
+            // Filter the timetable data based on the selected day
+            return timetableData['B21BB034'].filter(entry => entry.startsWith(selectedDay)) || [];
         }
     
         // If the roll number doesn't match the specific range, return an empty array
