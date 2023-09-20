@@ -192,6 +192,72 @@ document.addEventListener('DOMContentLoaded', function () {
                 '',
 
             ]
+
+            'B21CI015' :[
+                'Monday    Humanities(K)          Room 101                                   8:00 AM - 8:50 AM',
+                'Monday    Environmental          Room 102 BB dept.                    9:00 AM - 9:50 AM',
+                'Monday    Geotechnical            Room 110 CI dept.                     10:00 AM - 10:50 AM',
+                'Monday    Structural                  Room 110 CI dept.                     11:00 AM - 11:50 AM',
+                'Monday    Professional Ethics   Room 110 LHB                           5:00 PM - 5:50 PM',
+                
+                'Tuesday   Humanities(N)          Varies                                        8:00 AM - 8:50 AM',
+                'Tuesday   Environmental          Room 102 BB dept.                   9:00 AM - 9:50 AM',
+                'Tuesday   Transportation          Room 109 CI dept.                    10:00 AM - 10:50 AM',
+                'Tuesday   Construction Tech    Room 109 CI dept.                    11:00 AM - 11:50 AM',
+                 Tuesday   CTP LAB                  CI Dept.                                      3:00 PM - 5:00 PM', 
+                '',
+                'Wednesday  Transportation           Room 109 CI dept.              9:00 AM - 9:50 AM',
+                'Wednesday  Geotechnical             Room 110 CI dept.             10:00 AM - 10:50 AM',
+                'Wednesday  Structural analysis     Room 110 CI dept.             11:00 AM - 11:50 AM',
+                'Wednesday  Environment  LAB     CI Dept.,                             1:00 PM - 3:00 PM',
+                '',
+                'Thursday  Humanities(N)              Varies                                    8:00 AM - 8:50 AM',
+                'Thursday  Environmental              Room 102 BB dept.               9:00 AM - 9:50 AM',
+                'Thursday  Geotechnical                Room 110 CI dept.                10:00 AM - 10:50 AM',
+                'Thursday  Construction Tech        Room 109 CI dept.                11:00 AM - 11:50 AM',
+                'Thursday Intro to Prof                   Room 110 LHC                      5:00 PM - 6:00 PM',
+                '',
+                'Friday    Transportation                 Room 109 CI dept.                 9:00 AM - 9:50 AM',
+                'Friday    Structural analysis           Room 110 CI dept.                10:00 AM - 10:50 AM',
+                'Friday    Construction Tech            Room 109 CI dept.                11:00 AM - 11:50 AM',
+                'Friday    Geotech Tutorial              CI dept.                                  12:00 AM - 11:50 AM',
+                'Friday    Structural analysis LAB   CI dept.                                   3:00 PM - 5:00 PM',
+                'Friday    N SLOT                            varies                                     5:00 PM - 5:50 PM',
+                '',
+
+            ]
+        'B21ME001' : [
+
+             'Monday    Humanities(K)           Room 101                                 8:00 AM - 8:50 AM',
+                'Monday    Digital Fabr               Room 102 ME dept.                  9:00 AM - 9:50 AM',
+                'Monday     MSM                        Room 110 ME dept.                  10:00 AM - 10:50 AM',
+                'Monday    HT                             Room 110 ME dept.                  11:00 AM - 11:50 AM',
+                'Monday    Professional Ethics   Room 110 LHB                          5:00 PM - 5:50 PM',
+                
+                'Tuesday   Humanities(N)           Varies                                       8:00 AM - 8:50 AM',
+                'Tuesday   Digital Fabr               Room 102 ME dept.                  9:00 AM - 9:50 AM',
+                'Tuesday   KDM                         Room 109 ME dept.                  10:00 AM - 10:50 AM',
+                'Tuesday   Prom                         Room 109 ME dept.                   11:00 AM - 11:50 AM',
+                 Tuesday   MP LAB                    ME Dept.                                     3:00 PM - 5:00 PM', 
+                '',
+                'Wednesday  KDM                    Room 109 ME dept.             9:00 AM - 9:50 AM',
+                'Wednesday  MSM                   Room 110 ME dept.             10:00 AM - 10:50 AM',
+                'Wednesday  HT                       Room 110 ME dept.             11:00 AM - 11:50 AM',
+                'Wednesday  KDM  LAB           ME Dept.,                             1:00 PM - 3:00 PM',
+                '',
+                'Thursday  Humanities(N)              Varies                                    8:00 AM - 8:50 AM',
+                'Thursday  Digital Fabri                  Room 102 ME dept.              9:00 AM - 9:50 AM',
+                'Thursday  MSM                             Room 110 ME dept.              10:00 AM - 10:50 AM',
+                'Thursday  Prom                             Room 109 ME dept.              11:00 AM - 11:50 AM',
+                'Thursday  HT LAB                         Room 110 LHC                      5:00 PM - 6:00 PM',
+                '',
+                'Friday    KDM                  Room 109 ME dept.                 9:00 AM - 9:50 AM',
+                'Friday    HT                     Room 110 ME dept.                 10:00 AM - 10:50 AM',
+                'Friday    PROM               Room 109 ME dept.                 11:00 AM - 11:50 AM'
+                'Friday    N SLOT             varies                                        5:00 PM - 5:50 PM',
+                '',
+
+        ]
             // Add data for other roll numbers as needed
         };
 
@@ -203,6 +269,14 @@ document.addEventListener('DOMContentLoaded', function () {
         if (rollNumber >= 'B21BB001' && rollNumber <= 'B21BB040') {
             // Filter the timetable data based on the selected day
             return timetableData['B21BB034'].filter(entry => entry.startsWith(selectedDay)) || [];
+        }
+        if (rollNumber >= 'B21CI001' && rollNumber <= 'B21CI040') {
+            // Filter the timetable data based on the selected day
+            return timetableData['B21CI015'].filter(entry => entry.startsWith(selectedDay)) || [];
+        }
+        if (rollNumber >= 'B21ME001' && rollNumber <= 'B21ME080') {
+            // Filter the timetable data based on the selected day
+            return timetableData['B21ME001'].filter(entry => entry.startsWith(selectedDay)) || [];
         }
     
         // If the roll number doesn't match the specific range, return an empty array
