@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 '',
                 '',
 
-            ]
+            ],
 
             'B21CI015' :[
                 'Monday    Humanities(K)          Room 101                              8:00 AM - 8:50 AM',
@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 'Friday    N SLOT                      varies                           5:00 PM - 5:50 PM',
                 '',
 
-            ]
+            ],
         'B21ME001' : [
 
                 'Monday    Humanities(K)           Room 101                           8:00 AM - 8:50 AM',
@@ -278,7 +278,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 'Wednesday  HT                     Room 110 ME dept.             11:00 AM - 11:50 AM',
                 'Wednesday  KDM  LAB               ME Dept.,                     1:00 PM - 3:00 PM',
                 '',
-                'Thursday  Humanities(N)              Varies                                    8:00 AM - 8:50 AM',
+                'Thursday  Humanities(N)              Varies                         8:00 AM - 8:50 AM',
                 'Thursday  Digital Fabri              Room 102 ME dept.              9:00 AM - 9:50 AM',
                 'Thursday  MSM                        Room 110 ME dept.              10:00 AM - 10:50 AM',
                 'Thursday  Prom                       Room 109 ME dept.              11:00 AM - 11:50 AM',
@@ -286,7 +286,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 '',
                 'Friday    KDM                  Room 109 ME dept.                 9:00 AM - 9:50 AM',
                 'Friday    HT                   Room 110 ME dept.                 10:00 AM - 10:50 AM',
-                'Friday    PROM                 Room 109 ME dept.                 11:00 AM - 11:50 AM'
+                'Friday    PROM                 Room 109 ME dept.                 11:00 AM - 11:50 AM',
                 'Friday    N SLOT               varies                            5:00 PM - 5:50 PM',
                 '',
 
