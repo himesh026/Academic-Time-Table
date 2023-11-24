@@ -9,6 +9,9 @@ html,body{
     height: 100%;
 
 }
+.boxh1{
+    color: rgb(233, 233, 233);
+}
 #main{
     /* position: absolute; */
     width: 100%;
@@ -23,6 +26,26 @@ html,body{
     color: #fff;
     z-index:9999;
     scroll-behavior: none;
+}
+
+#loader {
+
+    background: linear-gradient(-45deg, #27374D, #526D82, #9DB2BF, #DDE6ED);
+
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 #loader #topheading{
@@ -346,9 +369,55 @@ h1 {
     color: #fdaf01;
 } */
 
+/* Variables */
 
+* {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
 
+/* footer------------- */
 
+  footer {
+    background-color: #333; /* Set the background color */
+    color: #fff; /* Set the text color */
+    padding: 20px 0 20px 0; 
+    height: 150px;
+}
+
+.footer{
+    background-color: black; /* Set the background color */
+
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    /* margin-left: 5px; */
+    height: 110px;
+        
+}
+
+.footer-section {
+    /* text-align: center; */
+    width: 100%;
+    margin-left: 50px;
+    line-height: 30px;
+    
+}
+
+h3, p {
+    margin: 0; /* Remove default margin */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow for a 3D effect */
+}
+  
 
 
 
